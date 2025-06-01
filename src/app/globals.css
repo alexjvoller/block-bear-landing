@@ -3,14 +3,104 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #FED835;
-  --secondary: #304fff;
+  /* Neutrals */
+  --neutrals-1: #ffffff;
+  --neutrals-2: #fdfdfd;
+  --neutrals-3: #f6f6f7;
+  --neutrals-4: #f1f2f3;
+  --neutrals-5: #dcdee0;
+  --neutrals-6: #c5c8cb;
+  --neutrals-7: #969ca2;
+  --neutrals-8: #676f78;
+  --neutrals-9: #545e68;
+  --neutrals-10: #38434f;
+  --neutrals-11: #313d49;
+  --neutrals-12: #283441;
+  --neutrals-13: #152230;
 
-  --primary-accent: #e5c230;
-  --foreground-accent: #454545;
-  --hero-background: #F3F3F5;
+  /* Pumpkin */
+  --pumpkin-50: #fff2e8;
+  --pumpkin-75: #fec8a1;
+  --pumpkin-100: #feb17a;
+  --pumpkin-200: #fd8f40;
+  --pumpkin-300: #fd7819;
+  --pumpkin-400: #b15412;
+  --pumpkin-500: #9a490f;
+
+  /* Cardinal */
+  --cardinal-50: #f3e6ef;
+  --cardinal-100: #bc6d9f;
+  --cardinal-200: #9f2f76;
+  --cardinal-300: #8b045a;
+  --cardinal-400: #61033f;
+  --cardinal-500: #550237;
+
+  /* Remy */
+  --remy-50: #fffcfd;
+  --remy-75: #fef2f8;
+  --remy-100: #feedf5;
+  --remy-200: #fde5f0;
+  --remy-300: #fde0ed;
+  --remy-400: #b19da6;
+  --remy-500: #9a8991;
+
+  /* Lilac */
+  --lilac-50: #fcfafe;
+  --lilac-75: #f1e8f9;
+  --lilac-100: #ebdff6;
+  --lilac-200: #e2d1f3;
+  --lilac-300: #dcc8f0;
+  --lilac-400: #9a8ca8;
+  --lilac-500: #867a92;
+
+  /* Purple */
+  --purple-50: #f4effb;
+  --purple-75: #d1bfed;
+  --purple-100: #bfa4e6;
+  --purple-200: #a37ddb;
+  --purple-300: #9062d4;
+  --purple-400: #654594;
+  --purple-500: #583c81;
+
+  /* Text Sizes - Desktop */
+  --desktop-h1: 68px;
+  --desktop-h2: 50px;
+  --desktop-h3: 44px;
+  --desktop-h4: 26px;
+  --desktop-p: 16px;
+  --desktop-tech-note: 16px;
+  --desktop-block-quote: 16px;
+  --desktop-table-header: 16px;
+  --desktop-table-data: 16px;
+  --desktop-h5: 18px;
+  --desktop-p-bold: 16px;
+  --desktop-tech-note-input: 32px;
+  --desktop-small: 14px;
+  --desktop-admin-subhighlight: 11px;
+
+  /* Text Sizes - Mobile */
+  --mobile-h1: 48px;
+  --mobile-h2: 30px;
+  --mobile-h3: 24px;
+  --mobile-h4: 20px;
+  --mobile-p: 16px;
+  --mobile-tech-note: 16px;
+  --mobile-block-quote: 16px;
+  --mobile-table-header: 16px;
+  --mobile-table-data: 16px;
+  --mobile-h5: 18px;
+  --mobile-p-bold: 16px;
+  --mobile-tech-note-input: 24px;
+  --mobile-micro: 14px;
+
+  /* Legacy variables for backward compatibility */
+  --background: var(--neutrals-1);
+  --foreground: var(--neutrals-13);
+  --primary: var(--pumpkin-300);
+  --secondary: var(--purple-300);
+  --primary-accent: var(--pumpkin-400);
+  --foreground-accent: var(--neutrals-9);
+  --hero-background: var(--neutrals-3);
 }
 
 html {
@@ -19,7 +109,6 @@ html {
 
 body {
   @apply text-lg;
-  
   color: var(--foreground);
   background: var(--background);
   font-family: "Source Sans 3", sans-serif;
@@ -39,7 +128,18 @@ body {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.lazer-84 {
+  font-family: "Lazer-84", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
