@@ -1,21 +1,38 @@
-import SectionTitle from "./SectionTitle";
+import React from "react";
+import { SectionHeader } from "./SectionHeader";
 
 interface Props {
-    id: string;
-    title: string;
-    description: string;
+  id: string;
+  pillNumber: number;
+  pillText: string;
+  header: React.ReactNode;
+  subheading?: string;
+  className?: string;
 }
 
-const Section: React.FC<React.PropsWithChildren<Props>> = ({ id, title, description, children }: React.PropsWithChildren<Props>) => {
-    return (
-        <section id={id} className="py-10 lg:py-20">
-            <SectionTitle>
-                <h2 className="text-center mb-4">{title}</h2>
-            </SectionTitle>
-            <p className="mb-12 text-center">{description}</p>
-            {children}
-        </section>
-    )
-}
+const Section: React.FC<React.PropsWithChildren<Props>> = ({
+  id,
+  pillNumber,
+  pillText,
+  header,
+  subheading,
+  className = "",
+  children,
+}: React.PropsWithChildren<Props>) => {
+  return (
+    <section
+      id={id}
+      className={`border-t-2 border-black py-10 lg:py-20 ${className}`}
+    >
+      <SectionHeader
+        pillNumber={pillNumber}
+        pillText={pillText}
+        header={header}
+        subheading={subheading}
+      />
+      {children}
+    </section>
+  );
+};
 
-export default Section
+export default Section;

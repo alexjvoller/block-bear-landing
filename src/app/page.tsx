@@ -8,35 +8,27 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
-
+import Statistics from "@/components/Statistics";
+import Trackables from "@/components/Trackables";
+import Schedule from "@/components/Schedule";
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
       <Logos />
+      <Statistics />
+      <Trackables />
+      <Schedule />
       <Container>
-        <Benefits />
-
         <Section
           id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
+          pillNumber={4}
+          pillText="Pricing"
+          header="Pay per block"
+          subheading="No subscription, only play for the blocks and services you want "
         >
           <Pricing />
         </Section>
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
-
-        <Stats />
-        
         <CTA />
       </Container>
     </>
