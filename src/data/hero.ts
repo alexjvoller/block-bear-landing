@@ -1,6 +1,5 @@
 export const heroDetails = {
-  heading: "Training Blocks That Build",
   subheading:
-    "From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before",
+    "No matter your sport or skill level, Block Bear training blocks puts you in control of your schedule and progression",
   centerImageSrc: "/images/hero.png",
 };

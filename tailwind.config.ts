@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,17 +10,117 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
         "primary-accent": "var(--primary-accent)",
         "foreground-accent": "var(--foreground-accent)",
         "hero-background": "var(--hero-background)",
+        neutrals: {
+          "1": "var(--neutrals-1)",
+          "2": "var(--neutrals-2)",
+          "3": "var(--neutrals-3)",
+          "4": "var(--neutrals-4)",
+          "5": "var(--neutrals-5)",
+          "6": "var(--neutrals-6)",
+          "7": "var(--neutrals-7)",
+          "8": "var(--neutrals-8)",
+          "9": "var(--neutrals-9)",
+          "10": "var(--neutrals-10)",
+          "11": "var(--neutrals-11)",
+          "12": "var(--neutrals-12)",
+          "13": "var(--neutrals-13)",
+        },
+        pumpkin: {
+          "50": "var(--pumpkin-50)",
+          "75": "var(--pumpkin-75)",
+          "100": "var(--pumpkin-100)",
+          "200": "var(--pumpkin-200)",
+          "300": "var(--pumpkin-300)",
+          "400": "var(--pumpkin-400)",
+          "500": "var(--pumpkin-500)",
+        },
+        cardinal: {
+          "50": "var(--cardinal-50)",
+          "75": "var(--cardinal-75)",
+          "100": "var(--cardinal-100)",
+          "200": "var(--cardinal-200)",
+          "300": "var(--cardinal-300)",
+          "400": "var(--cardinal-400)",
+          "500": "var(--cardinal-500)",
+        },
+        remy: {
+          "50": "var(--remy-50)",
+          "75": "var(--remy-75)",
+          "100": "var(--remy-100)",
+          "200": "var(--remy-200)",
+          "300": "var(--remy-300)",
+          "400": "var(--remy-400)",
+          "500": "var(--remy-500)",
+        },
+        lilac: {
+          "50": "var(--lilac-50)",
+          "75": "var(--lilac-75)",
+          "100": "var(--lilac-100)",
+          "200": "var(--lilac-200)",
+          "300": "var(--lilac-300)",
+          "400": "var(--lilac-400)",
+          "500": "var(--lilac-500)",
+        },
+        purple: {
+          "50": "var(--purple-50)",
+          "75": "var(--purple-75)",
+          "100": "var(--purple-100)",
+          "200": "var(--purple-200)",
+          "300": "var(--purple-300)",
+          "400": "var(--purple-400)",
+          "500": "var(--purple-500)",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          "1": "hsl(var(--chart-1))",
+          "2": "hsl(var(--chart-2))",
+          "3": "hsl(var(--chart-3))",
+          "4": "hsl(var(--chart-4))",
+          "5": "hsl(var(--chart-5))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;
