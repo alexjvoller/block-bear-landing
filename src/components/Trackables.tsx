@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import { statisticsDetails } from "@/data/statistics";
 import { SectionHeader } from "./SectionHeader";
 
 const Trackables: React.FC = () => {
@@ -27,7 +26,7 @@ const Trackables: React.FC = () => {
                 Trackables
               </>
             }
-            subheading={statisticsDetails.subheading}
+            subheading="target and actual trend analysis, min, max, averages, forecasts, compliance, attendance: throughout your training block"
           />
           <Image
             src="/images/trackables.png"

@@ -1,16 +1,29 @@
-import BenefitSection from "./BenefitSection"
+import BenefitSection from "./BenefitSection";
 
-import { benefits } from "@/data/benefits"
+import { analyticsBenefits } from "@/data/analyticsBenefits";
+import { scheduleBenefits } from "@/data/scheduleBenefits";
+type Props = {
+  section: "analytics" | "schedule";
+};
 
-const Benefits: React.FC = () => {
-    return (
-        <div id="features">
-            <h2 className="sr-only">Features</h2>
-            {benefits.map((item, index) => {
-                return <BenefitSection key={index} benefit={item} imageAtRight={index % 2 !== 0} />
-            })}
-        </div>
-    )
-}
+const Benefits: React.FC<Props> = ({ section }) => {
+  const benefits =
+    section === "analytics" ? analyticsBenefits : scheduleBenefits;
 
-export default Benefits
+  return (
+    <div id="features">
+      <h2 className="sr-only">Features</h2>
+      {benefits.map((item, index) => {
+        return (
+          <BenefitSection
+            key={index}
+            benefit={item}
+            imageAtRight={index % 2 !== 0}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default Benefits;

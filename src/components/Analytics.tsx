@@ -1,16 +1,13 @@
 import React from "react";
-import Image from "next/image";
 
-import { scheduleDetails } from "@/data/schedule";
 import { SectionHeader } from "./SectionHeader";
-import { Card } from "./ui/card";
 import Benefits from "./Benefits/Benefits";
 
-const Schedule: React.FC = () => {
+const Analytics: React.FC = () => {
   return (
     <section
-      id="schedule"
-      className="relative border-t-2 border-black flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-purple-50"
+      id="analytics"
+      className="relative flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-cardinal-50"
     >
       <div className="flex items-center justify-center">
         <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
@@ -21,21 +18,23 @@ const Schedule: React.FC = () => {
 
         <div className="flex flex-col gap-4 md:gap-6">
           <SectionHeader
-            pillNumber={3}
-            pillText="Schedule"
+            pillNumber={1}
+            pillText="Analytics"
             header={
               <>
-                A Schedule that starts, stops,{" "}
-                <span className="font-['Lazer84'] text-remy-500">SLIDES</span>
+                Analytics for Key{" "}
+                <span className="font-['Lazer84'] text-cardinal-300">
+                  INSIGHTS
+                </span>
               </>
             }
-            subheading="Manage your schedule in one place and create plan out your month, year, or that marathon. "
+            subheading="Analytics give you the data you need to ensure your training is progressing per the plan and whether adjustments are needed. Easily identify undertraining, overtraining, plateus to fully optimise your training block. "
           />
-          <Benefits section="schedule" />
+          <Benefits section="analytics" />
         </div>
       </div>
     </section>
   );
 };
 
-export default Schedule;
+export default Analytics;

@@ -8,7 +8,7 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
-import Statistics from "@/components/Statistics";
+import Analytics from "@/components/Analytics";
 import Trackables from "@/components/Trackables";
 import Schedule from "@/components/Schedule";
 const HomePage: React.FC = () => {
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       <Logos />
-      <Statistics />
+      <Analytics />
       <Trackables />
       <Schedule />
       <Container>

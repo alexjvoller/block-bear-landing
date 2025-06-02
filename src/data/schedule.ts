@@ -9,5 +9,4 @@ export const scheduleDetails = {
   card2Image: "/images/block-chaining.png",
   card2Header: "Block and Goal Chaining",
   card2Description:
-    "Schedule training blocks after each other, and link your goals  so the finish value of one block is the start of the next.`",
 };
