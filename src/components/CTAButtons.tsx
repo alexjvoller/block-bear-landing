@@ -2,19 +2,22 @@
 
 import { Button } from "@/components/ui/button";
 import { siteDetails } from "@/data/siteDetails";
-const HeroButtons = () => {
+
+const CTAButtons = () => {
   return (
-    <div className="max-w-sm flex gap-2 z-100">
+    <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
       <Button
+        size="lg"
         variant="cta"
-        className="w-full"
+        className="w-48"
         onClick={() => window.open(siteDetails.blockBearHomeUrl, "_blank")}
       >
         Read More
       </Button>
       <Button
+        size="lg"
         variant="ctafilled"
-        className="w-full"
+        className="w-48"
         onClick={() =>
           window.open(siteDetails.blockBearLaunchPartyUrl, "_blank")
         }
@@ -25,4 +28,4 @@ const HeroButtons = () => {
   );
 };
 
-export default HeroButtons;
+export default CTAButtons;

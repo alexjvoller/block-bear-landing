@@ -77,15 +77,17 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                 {description}
               </p>
 
-              <Button
-                variant="outline"
-                className="mt-2 w-min"
-                onClick={() =>
-                  window.open("https://blockbear.mintlify.app", "_blank")
-                }
-              >
-                Learn More
-              </Button>
+              <div className="flex w-full justify-center lg:justify-start">
+                <Button
+                  variant="outline"
+                  className="mt-2 w-min"
+                  onClick={() =>
+                    window.open("https://blockbear.mintlify.app", "_blank")
+                  }
+                >
+                  Learn More
+                </Button>
+              </div>
             </motion.div>
 
             <div className="mx-auto lg:ml-0 w-full">

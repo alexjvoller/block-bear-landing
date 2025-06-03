@@ -10,4 +10,7 @@ export const siteDetails = {
   locale: "en-US",
   siteLogo: `${process.env.BASE_PATH || ""}/images/Logo.svg`, // or use a string for the logo e.g. "TechStartup"
   googleAnalyticsId: "", // e.g. G-XXXXXXX,
+  blockBearHomeUrl: "https://blockbear.mintlify.app",
+  blockBearLaunchPartyUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSc6rsouNnUsDthJATvblnFAtIaJfYlgU3TQQ0Cdd554du2VEQ/viewform?usp=header",
 };

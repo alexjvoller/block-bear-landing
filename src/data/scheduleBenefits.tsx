@@ -1,7 +1,7 @@
-import { FiBarChart2, FiTarget } from "react-icons/fi";
-
+import { MdEditCalendar, MdOutlineInsertLink } from "react-icons/md";
 import { IBenefit } from "@/types";
-
+import { FiStopCircle } from "react-icons/fi";
+import { FiBarChart2 } from "react-icons/fi";
 export const scheduleBenefits: IBenefit[] = [
   {
     title: "All your training in one place",
@@ -12,13 +12,13 @@ export const scheduleBenefits: IBenefit[] = [
         title: "Schedule in Advance",
         description:
           "Set start dates, or schedule after another block in your program.",
-        icon: <FiBarChart2 size={26} />,
+        icon: <MdEditCalendar size={26} />,
       },
       {
         title: "Link Blocks and Goals",
         description:
           "Let your goals and blocks build from each other by linking starting values to the block before.",
-        icon: <FiTarget size={26} />,
+        icon: <MdOutlineInsertLink size={26} />,
       },
     ],
     imageSrc: "/images/schedule-center.png",
@@ -31,7 +31,7 @@ export const scheduleBenefits: IBenefit[] = [
       {
         title: "Stop, Stop, Pause, Schedule",
         description: "Start, stop, pause your training blocks when you need.",
-        icon: <FiBarChart2 size={26} />,
+        icon: <FiStopCircle size={26} />,
       },
       {
         title: "Active recalculation",
@@ -40,6 +40,6 @@ export const scheduleBenefits: IBenefit[] = [
         icon: <FiBarChart2 size={26} />,
       },
     ],
-    imageSrc: "/images/start-stop.png",
+    imageSrc: "/images/edit-schedule.png",
   },
 ];
