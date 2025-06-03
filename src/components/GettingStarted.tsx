@@ -12,7 +12,7 @@ import { Pill } from "./pill";
 
 const GettingStartted: React.FC = () => {
   return (
-    <section id="faq" className="py-10 lg:py-20">
+    <section id="get-started" className="py-10 lg:py-20">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="">
           <Pill number={4} text="Getting Started" />

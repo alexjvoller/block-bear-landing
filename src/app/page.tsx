@@ -3,10 +3,8 @@ import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing/Pricing";
 import GettingStarted from "@/components/GettingStarted";
 import Logos from "@/components/Logos";
-import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
 import Analytics from "@/components/Analytics";
 import Trackables from "@/components/Trackables";
@@ -30,7 +28,7 @@ const HomePage: React.FC = () => {
           <Testimonials />
         </Section>
         <Section
-          id="Pricing"
+          id="pricing"
           pillNumber={6}
           pillText="Pricing"
           header="Pay per block"

@@ -1,16 +1,12 @@
 import React from "react";
-import Image from "next/image";
-
-import { scheduleDetails } from "@/data/schedule";
 import { SectionHeader } from "./SectionHeader";
-import { Card } from "./ui/card";
 import Benefits from "./Benefits/Benefits";
 
 const Schedule: React.FC = () => {
   return (
     <section
       id="schedule"
-      className="relative border-t-2 border-black flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-purple-50"
+      className="relative border-t-2 border-b-2 border-black flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-purple-50"
     >
       <div className="flex items-center justify-center">
         <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">

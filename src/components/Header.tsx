@@ -22,10 +22,6 @@ const Header: React.FC = () => {
         <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-3">
           {/* Logo */}
           <Link href="/" className="">
-            {/* <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span> */}
             <Image
               src="/images/logo.svg"
               quality={100}
@@ -50,13 +46,17 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Button variant="outline" className="w-full" onClick={toggleMenu}>
-                Docs
+              <Button variant="cta" className="w-full" onClick={toggleMenu}>
+                Join Waitlist
               </Button>
             </li>
             <li>
-              <Button variant="cta" className="w-full" onClick={toggleMenu}>
-                Join Waitlist
+              <Button
+                variant="ctafilled"
+                className="w-full"
+                onClick={toggleMenu}
+              >
+                Join Launch Party List
               </Button>
             </li>
           </ul>
@@ -105,8 +105,17 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Button variant="outline" className="w-full" onClick={toggleMenu}>
+              <Button variant="cta" className="w-full" onClick={toggleMenu}>
                 Join Waitlist
+              </Button>
+            </li>
+            <li>
+              <Button
+                variant="ctafilled"
+                className="w-full"
+                onClick={toggleMenu}
+              >
+                Join Launch Party List
               </Button>
             </li>
           </ul>
