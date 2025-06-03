@@ -3,7 +3,7 @@ import React from "react";
 
 export const faqs: IFAQ[] = [
   {
-    question: `I don&apos;t track because I don&apos;t like journalling, how is this different?`,
+    question: `I don't track because I don't like journalling, how is this different?`,
     answer: (
       <>
         <p className="mb-4">
@@ -34,7 +34,7 @@ export const faqs: IFAQ[] = [
     ),
   },
   {
-    question: `This seems advanced, what if I&apos;m a beginner?`,
+    question: `This seems advanced, what if I'm a beginner?`,
     answer: (
       <p>
         From using Block Bear to simply track your daily step count or the
