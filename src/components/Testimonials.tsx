@@ -6,8 +6,8 @@ import { testimonials } from "@/data/testimonials";
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="flex gap-20 flex-wrap mx-auto items-center justify-center">
-      <div className="grid gap-14  mx-auto w-96">
+    <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 mx-auto items-center justify-center w-full">
+      <div className="grid gap-14 mx-auto">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="">
             <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
@@ -33,7 +33,7 @@ const Testimonials: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="">
+      <div className="w-full flex justify-center">
         <Image
           src="/images/alex-lift.jpeg"
           alt={`Alex lifting`}

@@ -17,11 +17,11 @@ const CTA: React.FC = () => {
 
             <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
 
-            <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-              <Button size="lg" variant="cta" className="">
+            <div className="mt-4 flex flex-col  sm:flex-row items-center gap-4">
+              <Button size="lg" variant="cta" className="w-48">
                 Read More
               </Button>
-              <Button size="lg" variant="ctafilled" className="z-10">
+              <Button size="lg" variant="ctafilled" className="w-38">
                 Join Launch Party List
               </Button>
             </div>

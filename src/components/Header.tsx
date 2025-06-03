@@ -46,15 +46,15 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Button variant="cta" className="w-full" onClick={toggleMenu}>
-                Join Waitlist
-              </Button>
-            </li>
-            <li>
               <Button
                 variant="ctafilled"
                 className="w-full"
-                onClick={toggleMenu}
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSc6rsouNnUsDthJATvblnFAtIaJfYlgU3TQQ0Cdd554du2VEQ/viewform?usp=header",
+                    "_blank"
+                  )
+                }
               >
                 Join Launch Party List
               </Button>
@@ -105,15 +105,15 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <Button variant="cta" className="w-full" onClick={toggleMenu}>
-                Join Waitlist
-              </Button>
-            </li>
-            <li>
               <Button
                 variant="ctafilled"
                 className="w-full"
-                onClick={toggleMenu}
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSc6rsouNnUsDthJATvblnFAtIaJfYlgU3TQQ0Cdd554du2VEQ/viewform?usp=header",
+                    "_blank"
+                  )
+                }
               >
                 Join Launch Party List
               </Button>
