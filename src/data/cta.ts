@@ -1,6 +1,7 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
-    appStoreUrl: '#',
-    googlePlayUrl: '#'
-}
+  heading: "Start Building Your Progression and Goals",
+  subheading:
+    "Create your first block for free or browse the Training Block Marketplace. Join the Launch Party list for an founder's badge on your profile, and priortised access to affiliate programs and perks",
+  appStoreUrl: "#",
+  googlePlayUrl: "#",
+};

@@ -22,7 +22,7 @@ const Section: React.FC<React.PropsWithChildren<Props>> = ({
   return (
     <section
       id={id}
-      className={`border-t-2 border-black py-10 lg:py-20 ${className}`}
+      className={`py-10 lg:py-20 flex flex-col gap-4 ${className}`}
     >
       <SectionHeader
         pillNumber={pillNumber}

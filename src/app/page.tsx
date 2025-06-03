@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing/Pricing";
-import FAQ from "@/components/FAQ";
+import GettingStarted from "@/components/GettingStarted";
 import Logos from "@/components/Logos";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
@@ -20,9 +20,18 @@ const HomePage: React.FC = () => {
       <Trackables />
       <Schedule />
       <Container>
+        <GettingStarted />
         <Section
-          id="pricing"
-          pillNumber={4}
+          id="Stories"
+          pillNumber={5}
+          pillText="Stories"
+          header="Here our User Stories"
+        >
+          <Testimonials />
+        </Section>
+        <Section
+          id="Pricing"
+          pillNumber={6}
           pillText="Pricing"
           header="Pay per block"
           subheading="No subscription, only play for the blocks and services you want "

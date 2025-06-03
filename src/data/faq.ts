@@ -2,24 +2,33 @@ import { IFAQ } from "@/types";
 import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
-    {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
-    },
-    {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
-    },
-    {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
-    },
-    {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
-    },
-    {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
-    }
+  {
+    question: `I don't track because I don't like journelling, how is this different?`,
+    answer:
+      "Journalling, data entry all other admin fun is categorically not fun. That's why we've designed the journalling and the block onboarding to be as smart as possible. We do this is three main areas: our journal has a data entry by exception methodology; your target fields will be actual fields unless you enter, we search your data first for calculations and training block start markers and your journal is completely configurable for your preferences so only enter the fields you need too.  ",
+  },
+  {
+    question: `This seems advanced, what if I'm a beginner?`,
+    answer:
+      "From using Block Bear to simply track your daily step count or the number of waves caught amongst your friends, Blocks can be tailored up or down depending on your needs ",
+  },
+  {
+    question: `Can I simplify this all? Graphs and statistics are a vibe-kill`,
+    answer:
+      "Absolutely. Graphs, statistics and your journal options have display preferences which carry over block to block.",
+  },
+  {
+    question: `Okay but I use Garmin, Apple Health, can this talk to them?`,
+    answer:
+      "Absolutely! Block Bear is integrated to Garmin and Apple Health so your data will be automatically forwarded.",
+  },
+  {
+    question: "Can I create my own blocks?",
+    answer: `Yes! Create block from scratch, template or use ai to give you a starting point. Invite your friends to join your blocks, and make them public on the Block marketplace`,
+  },
+  {
+    question: "How do I know which training block is right for me?",
+    answer:
+      "The Block marketplace has standardised services catlogue so you can filter by sport, skill level, and more. Whether you want one-one-one coaching with chat and file-review; or just a begginer template running plan; your next block is just a click away. ",
+  },
 ];
