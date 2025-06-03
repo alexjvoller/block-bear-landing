@@ -5,7 +5,7 @@ export const bullets: IBenefitBullet[] = [
   {
     title: "Calculated Trackables",
     description:
-      "Support for every possible equations with a rapidly growing catalogue. View your values with the raw functions and data we used for complete assurance",
+      "Support for every possible equation with a rapidly growing catalogue. View your values with the functions and data we used for complete assurance.",
     icon: <CiCalculator1 size={26} />,
   },
   {

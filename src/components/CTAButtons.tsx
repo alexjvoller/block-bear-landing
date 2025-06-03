@@ -5,7 +5,7 @@ import { siteDetails } from "@/data/siteDetails";
 
 const CTAButtons = () => {
   return (
-    <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
+    <div className="mt-4 flex flex-col sm:flex-row items-center gap-4">
       <Button
         size="lg"
         variant="cta"

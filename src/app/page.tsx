@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
           id="Stories"
           pillNumber={5}
           pillText="Stories"
-          header="Here our User Stories"
+          header="Here Our User Stories"
         >
           <Testimonials />
         </Section>
@@ -31,8 +31,8 @@ const HomePage: React.FC = () => {
           id="pricing"
           pillNumber={6}
           pillText="Pricing"
-          header="Pay per block"
-          subheading="No subscription, only play for the blocks and services you want "
+          header="Pay Per Block"
+          subheading="No subscription, only play for the blocks and services you want."
         >
           <Pricing />
         </Section>

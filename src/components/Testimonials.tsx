@@ -28,18 +28,32 @@ const Testimonials: React.FC = () => {
               </div>
             </div>
             <p className="text-foreground-accent text-center lg:text-left">
-              &quot;{testimonial.message}&quot;
+              {testimonial.message}
             </p>
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center relative mb-12 sm:mb-0">
         <Image
           src="/images/alex-lift.jpeg"
           alt={`Alex lifting`}
           width={316}
           height={300}
           className="border-4 border-purple-300 rounded-lg"
+        />
+        <Image
+          src="/images/hit.svg"
+          alt={`Alex lifting`}
+          width={707}
+          height={244}
+          className="hidden sm:block absolute -bottom-24 -left-80"
+        />
+        <Image
+          src="/images/hit-flipped.svg"
+          alt={`Alex lifting`}
+          width={707}
+          height={244}
+          className="sm:hidden absolute -bottom-24 left-0"
         />
       </div>
     </div>

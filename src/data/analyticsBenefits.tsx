@@ -9,12 +9,12 @@ export const analyticsBenefits: IBenefit[] = [
   {
     title: "The markers you need",
     description:
-      "target and actual trend analysis, min, max, averages, forecasts, compliance, attendance: throughout your training block",
+      "Target and actual trend analysis, min, max, averages, forecasts, compliance, attendance and more for your training block.",
     bullets: [
       {
         title: "Actual Trendline and Forecast Values",
         description:
-          "See the recorded trendline for your block data and see the forecasted value",
+          "See the recorded trendline and view the forecasted value.",
         icon: <MdAutoGraph size={26} />,
       },
       {
@@ -26,7 +26,7 @@ export const analyticsBenefits: IBenefit[] = [
       {
         title: "Get Strict with Tolerance Values",
         description:
-          "Goals can set with either a % or fixed value tolerance value so you can track how compliant your are to the plan.",
+          "Goals can be set with either a % or fixed value tolerance value so you can track how compliant your are to the plan.",
         icon: <FiTarget size={26} />,
       },
     ],
@@ -40,28 +40,28 @@ export const analyticsBenefits: IBenefit[] = [
       {
         title: "Reset from Start",
         description:
-          "Reset your incrent rates, targets by from the start of the block",
+          "Reset your increment rates, fixed targets or % change values from the start of the block.",
         icon: <RxEraser size={26} />,
       },
       {
-        title: "Add a new phase",
+        title: "Add a New Phase",
         description:
-          "Don't want to lose your previous goal trend? Add a new phase begining from your target or actual trendline value for a mid-block reset.",
+          "Don't want to lose your previous goal trend? Add a new phase from your target or actual trendline if you need a mid-block reset.",
         icon: <MdEdit size={26} />,
       },
       {
         title: "Condition Based Adjustments",
         description:
-          "Goals can monitor your statistics and auto-update if a statistic meets a threshold. For example Goal Calories may increase by 10% if bodyweight change per week is too low",
+          "Goals can monitor your statistics and auto-update if a statistic meets a threshold. For example: Goal Calories may increase by 10% if bodyweight change per week is too low.",
         icon: <FaLink size={26} />,
       },
     ],
     imageSrc: "/images/goals-that-adjust.png",
   },
   {
-    title: "Analytics for all sports, all levels",
+    title: "Analytics for All Sports, All Levels",
     description:
-      "Goals and statistics are built from of the Block Bear trackables catalogue. If it can be calculated or measured, you can add goals and statistics to it in Block Bear.",
+      "Goals and statistics are built from trackables. If it can be calculated or measured, you can add goals and statistics to it in Block Bear.",
     bullets: [],
     imageSrc: "/images/statistics-you-need.png",
   },

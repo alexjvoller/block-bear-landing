@@ -16,9 +16,9 @@ const Hero: React.FC = () => {
 
       <div className="absolute left-0 right-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent to-[#9062d4] -z-10"></div>
 
-      <div className="flex flex-col text-center items-center justify-center relative z-10">
+      <div className="flex flex-col gap-4 text-center items-center justify-center relative z-10">
         <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">
-          Training Blocks that{" "}
+          Training Blocks That{" "}
           <span className="font-['Lazer84'] text-pumpkin-300">Build</span>
         </h1>
         <p className="mt-4 text-foreground max-w-lg mx-auto">
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           priority={true}
           unoptimized={true}
           alt="app mockup"
-          className="relative mt-12 md:mt-16 mx-auto z-10 w-full h-[33vh] md:h-[40vh] lg:h-auto lg:max-w-xl object-contain"
+          className="relative mt-12 md:mt-16 mx-auto z-10 w-full h-[40vh] md:h-[50vh] lg:h-auto lg:max-w-2xl object-contain"
           style={{
             filter: "drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))",
             borderRadius: "4px",

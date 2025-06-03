@@ -4,7 +4,7 @@ import { FiStopCircle } from "react-icons/fi";
 import { FiBarChart2 } from "react-icons/fi";
 export const scheduleBenefits: IBenefit[] = [
   {
-    title: "All your training in one place",
+    title: "All Your Training in One Place",
     description:
       "Your lifetime training history stored in one place. Reschedule or restart your favourite training blocks and compare your performance.",
     bullets: [
@@ -24,7 +24,7 @@ export const scheduleBenefits: IBenefit[] = [
     imageSrc: "/images/schedule-center.png",
   },
   {
-    title: "Sync your Training to your Schedule",
+    title: "Sync Your Training to Your Schedule",
     description:
       "Adjust your training so it fits your schedule. When your schedule slides, we'll calculate your forecasted targets, goals and analytics, and the start dates of future blocks to adjust.",
     bullets: [
@@ -34,7 +34,7 @@ export const scheduleBenefits: IBenefit[] = [
         icon: <FiStopCircle size={26} />,
       },
       {
-        title: "Active recalculation",
+        title: "Active Recalculation",
         description:
           "If life happens and you schedule changes, we'll recalculate your schedule and your forecasts when this happens.",
         icon: <FiBarChart2 size={26} />,

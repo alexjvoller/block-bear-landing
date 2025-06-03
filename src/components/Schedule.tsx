@@ -21,11 +21,11 @@ const Schedule: React.FC = () => {
             pillText="Schedule"
             header={
               <>
-                A Schedule that starts, stops,{" "}
+                A Schedule That Starts, Stops,{" "}
                 <span className="font-['Lazer84'] text-remy-500">SLIDES</span>
               </>
             }
-            subheading="Manage your schedule in one place and create plan out your month, year, or that marathon. "
+            subheading="Manage your schedule in one place and plan out your month, year, or that marathon. "
           />
           <Benefits section="schedule" />
         </div>

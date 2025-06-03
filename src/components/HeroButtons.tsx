@@ -19,7 +19,7 @@ const HeroButtons = () => {
           window.open(siteDetails.blockBearLaunchPartyUrl, "_blank")
         }
       >
-        Join Launch Party List
+        Join Launch List
       </Button>
     </div>
   );

@@ -22,13 +22,13 @@ const Analytics: React.FC = () => {
             pillText="Analytics"
             header={
               <>
-                Analytics for Key{" "}
+                Analytics For Key{" "}
                 <span className="font-['Lazer84'] text-cardinal-300">
                   INSIGHTS
                 </span>
               </>
             }
-            subheading="Analytics give you the data you need to ensure your training is progressing per the plan and whether adjustments are needed. Easily identify undertraining, overtraining, plateus to fully optimise your training block. "
+            subheading="Easily identify undertraining, overtraining, plateus to fully optimise your training block."
           />
           <Benefits section="analytics" />
         </div>

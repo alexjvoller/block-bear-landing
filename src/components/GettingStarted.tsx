@@ -14,8 +14,10 @@ const GettingStartted: React.FC = () => {
   return (
     <section id="get-started" className="py-10 lg:py-20">
       <div className="flex flex-col lg:flex-row gap-10">
-        <div className="">
-          <Pill number={4} text="Getting Started" />
+        <div className="text-center md:text-left">
+          <div className="flex justify-center md:justify-start">
+            <Pill number={4} text="Getting Started" />
+          </div>
           <SectionTitle>
             <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">
               The Easiest Way To Get Started

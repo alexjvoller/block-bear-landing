@@ -14,11 +14,11 @@ const Trackables: React.FC = () => {
           pillText="Trackables"
           header={
             <>
-              A platform for all your sports, hobbies,
+              A Platform For All Your Sports, Hobbies,
               <span className="font-['Lazer84']">QUESTS</span>
             </>
           }
-          subheading="Build your blocks from over 300 measured and calculated trackables. With the scale and specificity we offer, Block Bear is able to support all of your tracking needs. No more multiple apps, no more splinted data."
+          subheading="Build your blocks from over 300 measured and calculated trackables. With the scale and specificity we offer, Block Bear is able to support all of your tracking needs. No more multiple apps, no more splintered data."
         />
         <TrackableBullets bullets={bullets} />
         <Image

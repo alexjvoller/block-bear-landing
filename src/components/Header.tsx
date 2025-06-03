@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                   )
                 }
               >
-                Join Launch Party List
+                Join Launch List
               </Button>
             </li>
           </ul>
