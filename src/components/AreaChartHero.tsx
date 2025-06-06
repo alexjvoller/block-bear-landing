@@ -6,87 +6,60 @@ import {
   slugNames,
   SlugNamesType,
 } from "@/../public/data/bodyweight";
-// const chartdata = [
-//   {
-//     date: "Jan 23",
-//     SolarPanels: 2890,
-//     Inverters: 2338,
-//   },
-//   {
-//     date: "Feb 23",
-//     SolarPanels: 2756,
-//     Inverters: 2103,
-//   },
-//   {
-//     date: "Mar 23",
-//     SolarPanels: 3322,
-//     Inverters: 2194,
-//   },
-//   {
-//     date: "Apr 23",
-//     SolarPanels: 3470,
-//     Inverters: 2108,
-//   },
-//   {
-//     date: "May 23",
-//     SolarPanels: 3475,
-//     Inverters: 1812,
-//   },
-//   {
-//     date: "Jun 23",
-//     SolarPanels: 3129,
-//     Inverters: 1726,
-//   },
-//   {
-//     date: "Jul 23",
-//     SolarPanels: 3490,
-//     Inverters: 1982,
-//   },
-//   {
-//     date: "Aug 23",
-//     SolarPanels: 2903,
-//     Inverters: 2012,
-//   },
-//   {
-//     date: "Sep 23",
-//     SolarPanels: 2643,
-//     Inverters: 2342,
-//   },
-//   {
-//     date: "Oct 23",
-//     SolarPanels: 2837,
-//     Inverters: 2473,
-//   },
-//   {
-//     date: "Nov 23",
-//     SolarPanels: 2954,
-//     Inverters: 3848,
-//   },
-//   {
-//     date: "Dec 23",
-//     SolarPanels: 3239,
-//     Inverters: 3736,
-//   },
-// ];
+import { useContext } from "react";
+import { chartContext } from "@/contexts/use-chart-context";
 
 const colorMap = (key: SlugNamesType): "purple" | "pumpkin" => {
   return "purple";
 };
-export const AreaChartHero = () => (
-  <AreaChart
-    className="h-80 "
-    data={bodyweight}
-    index="date"
-    categories={["actual", ...slugNames]}
-    colors={["pumpkin", ...slugNames.map(colorMap)]}
-    showLegend={false}
-    connectNulls={true}
-    showXAxis={false}
-    showYAxis={false}
-    showGridLines={false}
-    valueFormatter={(number: number) =>
-      `${Intl.NumberFormat("us").format(number).toString()}`
-    }
-    onValueChange={(v) => console.log(v)}
-  />
-);
+
+//responsible for setting the slug name, date, actual, target values up to the use context.
+const AreaChartHero = () => {
+  const context = useContext(chartContext);
+
+  if (!context) {
+    throw new Error("AreaChartHero must be used within a ChartContextProvider");
+  }
+
+  const { setContextValue } = context;
+
+  return (
+    <AreaChart
+      className="h-80 "
+      data={bodyweight}
+      index="date"
+      categories={["actual", ...slugNames]}
+      colors={["pumpkin", ...slugNames.map(colorMap)]}
+      showLegend={false}
+      connectNulls={true}
+      showXAxis={false}
+      showYAxis={false}
+      showGridLines={false}
+      autoMinValue={true}
+      valueFormatter={(number: number) =>
+        `${Intl.NumberFormat("us").format(number).toString()}`
+      }
+      tooltipCallback={({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          const actualValue = payload.find(
+            (item: any) => item.category === "actual"
+          )?.value;
+          const targetItem = payload.find(
+            (item: any) => item.category !== "actual"
+          );
+
+          if (actualValue !== undefined && targetItem) {
+            setContextValue({
+              slugName: targetItem.category as SlugNamesType,
+              date: label,
+              actual: actualValue,
+              target: targetItem.value,
+            });
+          }
+        }
+      }}
+    />
+  );
+};
+
+export default AreaChartHero;
