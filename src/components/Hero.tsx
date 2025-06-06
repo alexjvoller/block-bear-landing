@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
         <ValueStatistic
           name="target"
           value={contextValue.target}
-          className="text-neutral-400 absolute  top-72 left-2/4"
+          className="text-neutral-500 absolute  bottom-20 left-2/4"
           date={contextValue.date}
         />
 
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
         <ValueStatistic
           name="Leaderboard Rank"
           value={config.leaderboard}
-          className="text-neutral-600 text-md absolute top-96 left-1/4"
+          className="text-neutral-600 text-md absolute bottom-0 left-10"
           date={undefined}
         />
       </div>

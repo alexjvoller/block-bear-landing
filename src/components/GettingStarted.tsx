@@ -16,7 +16,7 @@ const GettingStartted: React.FC = () => {
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="text-center md:text-left">
           <div className="flex justify-center md:justify-start">
-            <Pill number={4} text="Getting Started" />
+            <Pill number={5} text="Getting Started" />
           </div>
           <SectionTitle>
             <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">

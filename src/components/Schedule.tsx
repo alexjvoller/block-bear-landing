@@ -6,7 +6,7 @@ const Schedule: React.FC = () => {
   return (
     <section
       id="schedule"
-      className="relative border-t-2 border-b-2 border-black flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-purple-50"
+      className="relative border-t-2 border-b-2 border-black flex flex-col items-center justify-center py-10 md:py-5 px-5 bg-purple-50"
     >
       <div className="flex items-center justify-center">
         <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
@@ -17,7 +17,7 @@ const Schedule: React.FC = () => {
 
         <div className="flex flex-col gap-4 md:gap-6">
           <SectionHeader
-            pillNumber={3}
+            pillNumber={4}
             pillText="Schedule"
             header={
               <>

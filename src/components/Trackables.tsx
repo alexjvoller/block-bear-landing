@@ -7,10 +7,10 @@ import { bullets } from "@/data/trackables";
 
 const Trackables: React.FC = () => {
   return (
-    <section id="trackables" className="py-24 border-t-2 border-black">
+    <section id="trackables" className="py-10 border-t-2 border-black">
       <div className="container flex flex-col items-center justify-center mx-auto px-8 md:px-12 lg:px-16">
         <SectionHeader
-          pillNumber={2}
+          pillNumber={3}
           pillText="Trackables"
           header={
             <>

@@ -9,24 +9,20 @@ import CTA from "@/components/CTA";
 import Analytics from "@/components/Analytics";
 import Trackables from "@/components/Trackables";
 import Schedule from "@/components/Schedule";
+import { MidCTA } from "@/components/MidCTA";
+
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
       <Logos />
       <Analytics />
+      <Testimonials />
+      <MidCTA />
       <Trackables />
       <Schedule />
       <Container>
         <GettingStarted />
-        <Section
-          id="Stories"
-          pillNumber={5}
-          pillText="Stories"
-          header="Here Our User Stories"
-        >
-          <Testimonials />
-        </Section>
         <Section
           id="pricing"
           pillNumber={6}
