@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CTAButtons from "./CTAButtons";
 
 export const MidCTA = () => {
@@ -21,22 +20,6 @@ export const MidCTA = () => {
             </p>
             <CTAButtons />
           </div>
-        </div>
-
-        {/* <CTAButtons /> */}
-        <div className="hidden lg:block">
-          <Image
-            src="/images/glasses-bear.png"
-            alt="Trackables preview"
-            width={200}
-            height={200}
-            quality={100}
-            sizes="(max-width: 768px) 100vw, 384px"
-            style={{
-              filter: "drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))",
-              borderRadius: "4px",
-            }}
-          />
         </div>
       </div>
     </section>
