@@ -49,6 +49,8 @@ const AreaChartHero = () => {
         showGridLines={false}
         showTooltip={false}
         autoMinValue={true}
+        startEndOnly={true}
+        intervalType="preserveStartEnd"
         valueFormatter={(number: number) =>
           `${Intl.NumberFormat("us").format(number).toString()}`
         }
