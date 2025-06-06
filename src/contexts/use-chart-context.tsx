@@ -1,10 +1,11 @@
 "use client";
 
-import React, { createContext, useState, ReactNode } from "react";
+import React, { createContext, useState, ReactNode, useContext } from "react";
 import { bodyweight } from "../../public/data/bodyweight";
+import { SlugNamesType } from "../../public/data/bodyweight";
 
 type ContextValue = {
-  slugName: string;
+  slugName: SlugNamesType;
   date: string;
   actual: number;
   target: number;
@@ -16,6 +17,14 @@ type ChartContextType = {
 };
 
 export const chartContext = createContext<ChartContextType | null>(null);
+
+export const useChartContext = () => {
+  const context = useContext(chartContext);
+  if (!context) {
+    throw new Error("useChartContext must be used within a ChartProvider");
+  }
+  return context;
+};
 
 export const ChartProvider = ({
   children,

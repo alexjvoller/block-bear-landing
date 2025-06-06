@@ -6,8 +6,7 @@ import {
   slugNames,
   SlugNamesType,
 } from "@/../public/data/bodyweight";
-import { useContext } from "react";
-import { chartContext } from "@/contexts/use-chart-context";
+import { useChartContext } from "@/contexts/use-chart-context";
 
 const colorMap = (key: SlugNamesType): "purple" | "pumpkin" => {
   return "purple";
@@ -15,13 +14,7 @@ const colorMap = (key: SlugNamesType): "purple" | "pumpkin" => {
 
 //responsible for setting the slug name, date, actual, target values up to the use context.
 const AreaChartHero = () => {
-  const context = useContext(chartContext);
-
-  if (!context) {
-    throw new Error("AreaChartHero must be used within a ChartContextProvider");
-  }
-
-  const { setContextValue } = context;
+  const { setContextValue } = useChartContext();
 
   return (
     <AreaChart
@@ -35,6 +28,7 @@ const AreaChartHero = () => {
       showXAxis={false}
       showYAxis={false}
       showGridLines={false}
+      showTooltip={false}
       autoMinValue={true}
       valueFormatter={(number: number) =>
         `${Intl.NumberFormat("us").format(number).toString()}`
