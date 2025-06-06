@@ -8,13 +8,18 @@ import {
 } from "@/../public/data/bodyweight";
 import { useChartContext } from "@/contexts/use-chart-context";
 
-const colorMap = (key: SlugNamesType): "purple" | "pumpkin" => {
+const colorMap = (): "purple" | "pumpkin" => {
   return "purple";
 };
 
 //responsible for setting the slug name, date, actual, target values up to the use context.
 const AreaChartHero = () => {
   const { setContextValue } = useChartContext();
+
+  interface PayloadItem {
+    category: string;
+    value: number;
+  }
 
   return (
     <AreaChart
@@ -36,10 +41,10 @@ const AreaChartHero = () => {
       tooltipCallback={({ active, payload, label }) => {
         if (active && payload && payload.length) {
           const actualValue = payload.find(
-            (item: any) => item.category === "actual"
+            (item: PayloadItem) => item.category === "actual"
           )?.value;
           const targetItem = payload.find(
-            (item: any) => item.category !== "actual"
+            (item: PayloadItem) => item.category !== "actual"
           );
 
           if (actualValue !== undefined && targetItem) {
