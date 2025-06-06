@@ -7,7 +7,7 @@ const Analytics: React.FC = () => {
   return (
     <section
       id="analytics"
-      className="relative flex flex-col items-center justify-center py-3 md:py-5 px-5 bg-cardinal-50"
+      className="relative flex flex-col items-center justify-center py-10 px-5 bg-cardinal-50"
     >
       <div className="flex items-center justify-center">
         <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">

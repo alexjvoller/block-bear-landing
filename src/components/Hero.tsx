@@ -42,13 +42,13 @@ const Hero: React.FC = () => {
             name="actual"
             value={contextValue.actual}
             date={contextValue.date}
-            className="text-neutral-300 absolute -top-24 left-3"
-            delay={0.3}
+            className="text-neutral-300 absolute -top-24 left-3 hidden md:block"
+            delay={0.8}
           />
           <ValueStatistic
             name="target"
             value={contextValue.target}
-            className="text-neutral-500 absolute bottom-20 left-2/4"
+            className="text-neutral-500 absolute bottom-4 left-2/4 hidden md:block"
             date={contextValue.date}
             delay={0.5}
           />
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             name="Total Target Change"
             value={config.totalTargetChanage}
             unit="kg"
-            className="text-neutral-300 absolute -top-20 right-3"
+            className="text-neutral-300 absolute -top-20 right-3 hidden md:block"
             date={undefined}
             delay={0.7}
           />
@@ -66,22 +66,22 @@ const Hero: React.FC = () => {
             name="Attendance"
             value={config.attendence}
             unit="%"
-            className="text-neutral-200 absolute -top-36 left-1/3"
+            className="text-neutral-200 absolute -top-36 left-1/3  hidden md:block"
             date={undefined}
-            delay={0.9}
+            delay={1.2}
           />
           <ValueStatistic
             name="Compliance"
             value={config.compliance}
             unit="%"
-            className="text-neutral-400 absolute -top-40 right-28"
+            className="text-neutral-400 absolute -top-40 right-28 hidden md:block"
             date={undefined}
             delay={1.1}
           />
           <ValueStatistic
             name="Leaderboard Rank"
             value={config.leaderboard}
-            className="text-neutral-600 text-md absolute bottom-0 left-10"
+            className="text-neutral-600 text-md absolute bottom-0 left-10 hidden md:block"
             date={undefined}
             delay={1.3}
           />

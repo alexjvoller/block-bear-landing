@@ -33,7 +33,11 @@ const AreaChartHero = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+        delay: 0.5,
+      }}
       className="w-full"
     >
       <AreaChart
