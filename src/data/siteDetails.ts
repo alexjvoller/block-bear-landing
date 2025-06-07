@@ -1,6 +1,6 @@
 export const siteDetails = {
   siteName: "Block Bear",
-  siteUrl: "https://finwise-omega.vercel.app/",
+  siteUrl: "https://blockbear.co/",
   metadata: {
     title: "Block Bear - Training Blocks that Build",
     description:
